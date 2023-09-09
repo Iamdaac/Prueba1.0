@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 section{
     padding: 60px 0;
 }
