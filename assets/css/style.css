@@ -81,6 +81,19 @@ section{
     -webkit-animation: move 25s infinite alternate;
             animation: move 25s infinite alternate;
     transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+} @media (max-width: 768px) {
+    .blob {
+        width: 100%; /* Cambia el ancho para dispositivos móviles */
+        height: auto; /* Cambia la altura para dispositivos móviles */
+        left: 0;
+        top: 0;/* Otros estilos para dispositivos móviles si es necesario */
+    }
+}
+.blob-container{
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 @-webkit-keyframes move {
@@ -104,21 +117,6 @@ section{
     }
 }
 
-@media (max-width: 768px) {
-    .blob {
-      width: 300px; /* Cambia el ancho para dispositivos móviles */
-      height: 300px; /* Cambia la altura para dispositivos móviles */
-      /* Otros estilos para dispositivos móviles si es necesario */
-    }
-}
-  /* Estilos para dispositivos de pantalla más grande (por defecto) */
-.blob {
-    position: absolute;
-    overflow: hidden;
-    width: 500px;
-    height: 500px;
-    /* Resto de estilos para el blob */
-}
 .list-group-item{
     background: rgba( 255, 255, 255, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
