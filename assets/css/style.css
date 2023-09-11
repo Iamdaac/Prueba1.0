@@ -4,7 +4,6 @@ html{
 section{
     padding: 60px 0;
 }
-
 /* Links del navbar */
 .nav-link{
     color: white;
@@ -114,4 +113,10 @@ section{
     padding: 1.5rem;
     z-index: 10;
     color: whitesmoke;
+}
+
+@media(prefers-reduced-motion: no-preference){
+    :root{
+        scroll-behavior: smooth;
+    }
 }

@@ -3,40 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Logo B7 Solo la A.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <title>Boris Alvarado - MiTarjeta</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #FF9C08;">
-        <div class="container-lg">
-            <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-white">
-                    <i class="bi bi-brush">
-                        Boris Alvarado - Publicista
-                    </i>
-                </span>
-            </a>
-            <!-- Toggle for mobile nav -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>         
-
-            <!-- Links -->
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#intro" class="nav-link">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
-                    </li>
-                    <li class="nav-item ms-1 d-none d-md-inline"></li>
+    <nav class="navbar navbar-expand-lg text-white fixed-top" id="mainNav" style="background-color: #FF9C08;">
+        <div class="container px-4">
+            <a class="navbar-brand text-white" href="#page-top">Boris Alvarado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#intro">Acerca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -53,11 +37,12 @@
                     </h1>
                     <p class="lead my-3 text-muted">Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit.</p>
+                    <button class="btn btn-primary">Contactame</button>
                 </div>
                 <div class="col-md-5 text-center img-fluid w-50">
                     <!-- Tooltip -->
                     <span class="tt" data-bs-placement="bottom" title="Boris Alvarado.">
-                        <img loading="lazy" class="img-fluid rounded-circle" src="assets/BorisAlvarado.png" alt="Boris Alvarado.">
+                        <img loading="lazy" class="img-fluid rounded-circle" src="assets/img/BorisAlvarado.png" alt="Boris Alvarado.">
                     </span>
                 </div>
             </div>
@@ -162,14 +147,8 @@
                 </div>
                 <!-- Copyright -->
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <!-- Animation for tooltips -->
-    <script>
-        const tooltips = document.querySelectorAll('.tt')
-        tooltips.forEach(t => {
-            new bootstrap.ToolTip(t)
-        })
-    </script>
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>
