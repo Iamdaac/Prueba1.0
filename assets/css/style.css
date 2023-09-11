@@ -89,12 +89,6 @@ section{
         top: 0;/* Otros estilos para dispositivos móviles si es necesario */
     }
 }
-.blob-container{
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
 
 @-webkit-keyframes move {
     from {
